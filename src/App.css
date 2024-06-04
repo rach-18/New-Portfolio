@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, #contact-me {
+  /* background-image: url(hero-background.jpg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-div {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.name-title {
+  font-family: "Whisper", cursive;
+}
+
+.avatar {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.branch {
+  animation: slideIn 3s linear forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+      clip-path: inset(0 0 0 100%);
+      opacity: 1;
+  }
+  20% {
+      clip-path: inset(0 0 0 80%);
+      opacity: 1;
+  }
+  40% {
+      clip-path: inset(0 0 0 60%);
+      opacity: 1;
+  }
+  60% {
+      clip-path: inset(0 0 0 40%);
+      opacity: 1;
+  }
+  80% {
+      clip-path: inset(0 0 0 20%);
+      opacity: 1;
+  }
+  100% {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+  }
+}
+
+.pink-flower1 { 
+  opacity: 0;
+  animation: bloom 2s ease-in-out forwards, inAndOut 1500ms 2s ease-in-out infinite alternate;
+}
+
+.pink-flower2 { 
+  opacity: 0;
+  animation: bloom 2s 500ms ease-in-out forwards, inAndOut 1500ms 2500ms ease-in-out infinite alternate;
+}
+
+.pink-flower3 { 
+  opacity: 0;
+  animation: bloom 2s 1s ease-in-out forwards, inAndOut 1500ms 3s ease-in-out infinite alternate;
+}
+
+.pink-flower4 { 
+  opacity: 0;
+  animation: bloom 2s 1500ms ease-in-out forwards, inAndOut 1500ms 3500ms ease-in-out infinite alternate;
+}
+
+.pink-flower5 { 
+  opacity: 0;
+  animation: bloom 2s 2s ease-in-out forwards, inAndOut 1500ms 4s ease-in-out infinite alternate;
+}
+
+@keyframes bloom {
+  0% { 
+      transform: scale(0);
+      opacity: 0; 
+  }
+  80% {
+      transform: scale(1.05);
+      opacity: 1;
+  }
+  100% { 
+      transform: scale(1);
+      opacity: 1; 
+  }
+}
+
+@keyframes inAndOut {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
+/* PROJECTS */
+
+.cloud {
+  animation: float 50s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    left: -20%;
+    transform: scale(1);
+  }
+  100% {
+    left: 100%;
+    transform: scale(1.1);
+  }
+}
+
+/* .cloud:nth-child(1) {
+  animation-delay: 1s;
+} */
+
+.cloud:nth-child(2) {
+  animation-delay: 15s; /* Delay the animation for the second cloud */
+}
+
+.cloud:nth-child(3) {
+  animation-delay: 25s; /* Delay the animation for the third cloud */
+}
+
+.cloud:nth-child(4) {
+  animation-delay: 35s; /* Delay the animation for the fourth cloud */
+}
+
+.cloud:nth-child(5) {
+  animation-delay: 45s;
+}
+
+#message-pointer {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+#experience {
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(experience-bg.png); */
+  background-repeat: no-repeat;
+  background-position: 100% 30%;
+  background-size: cover;
+}
+
+#carousel {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+#arrows {
+  transition: all 300ms;
+}
+
+#rope-clip {
+  clip-path: inset(34% 0 0 0);
+}
+
+#submit-btn {
+  transition: all 300ms;
+}
+
+.carousel-content .slide {
+  display: none;
+}
+
+.carousel-content .slide:first-child {
+  display: block;
+}
+
+.carousel-content .slide.active {
+  display: block;
+}
+
+.github-repo:hover {
+  transition: all 300ms;
+}
+
+.profile-pic {
+  animation: floatUpAndDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
