@@ -8,17 +8,17 @@ function About() {
         {
             "content" : 
             <div className="slide" key={0}>
-                <p className='text-4xl font-bold mb-2'>Keysight Technologies</p>
-                <div className='flex justify-between text-2xl font-semibold'>
+                <p className='2xl:text-5xl lg:text-4xl text-2xl font-bold mb-2'>Keysight Technologies</p>
+                <div className='flex justify-between 2xl:text-4xl lg:text-2xl text-xl font-semibold'>
                     <p>Research and Development Intern</p>
                     <p>Jan 2023 - Jul 2023</p>
                 </div>
-                <div className='flex gap-2 items-center my-2 text-sm'>
+                <div className='flex gap-2 items-center my-2 2xl:text-xl text-sm'>
                     <i className="fa-solid fa-location-dot"></i>
                     <p>Kolkata, India</p>
                 </div>
                 {/* <p className='text-xl underline'>Description:</p> */}
-                <ul className='list-disc ml-8 mt-3 flex flex-col gap-2'>
+                <ul className='list-disc ml-8 mt-3 flex flex-col gap-2 2xl:text-2xl'>
                     <li>Improved the functionality of IxNetwork Web Edition by collaborating with a team of 5 to
                     optimize the network. monitoring tool.</li>
                     <li>Conducted manual debugging of over 200 test cases, resolving software issues for smooth
@@ -32,17 +32,17 @@ function About() {
         {
             "content" : 
             <div className="slide" key={1}>
-                <p className='text-4xl font-bold mb-2'>Variable Energy Cylotron Center (VECC)</p>
-                <div className='flex justify-between text-2xl font-semibold'>
+                <p className='2xl:text-5xl text-4xl font-bold mb-2'>Variable Energy Cylotron Center (VECC)</p>
+                <div className='flex justify-between 2xl:text-4xl text-2xl font-semibold'>
                     <p>Web Development Intern</p>
                     <p>Jun 2022 - Jul 2022</p>
                 </div>
-                <div className='flex gap-2 items-center my-2 text-sm'>
+                <div className='flex gap-2 items-center my-2 2xl:text-xl text-sm'>
                     <i className="fa-solid fa-location-dot"></i>
                     <p>Kolkata, India</p>
                 </div>
                 {/* <p className='text-xl underline'>Description:</p> */}
-                <ul className='list-disc ml-8 mt-3 flex flex-col gap-2'>
+                <ul className='list-disc ml-8 mt-3 flex flex-col gap-2 2xl:text-2xl'>
                     <li>Revamped the organization's recruitment page to improve user experience and responsiveness.</li>
                     <li>Leveraged HTML, CSS, and Bootstrap to redesign the portal, resulting in a modern and user-friendly interface.</li>
                     <li>Ensured the website's responsiveness for multiple devices, enhancing accessibility for candidates.</li>
@@ -65,43 +65,44 @@ function About() {
             <div id="about-signboard" data-aos="fade-down" data-aos-duration="1200" data-aos-once="true">
                 <div>
                     <div className="relative flex justify-center">
-                        <div id='rope-clip' className="flex gap-[5rem] absolute top-[-1.8rem] z-[2]">
+                        <div id='rope-clip' className="flex lg:gap-[6rem] gap-[5rem] absolute top-[-1.8rem] z-[2]">
                             <img src="rope.png" alt="rope" />
                             <img className="scale-x-[-1]" src="rope.png" alt="rope" />
                         </div>
-                        <p className="bg-[#F0C0A9] text-white inline px-8 py-2 text-xl rounded-full absolute top-[3rem] z-[1] text-center">ABOUT ME</p>
+                        <p className="bg-[#F0C0A9] text-white inline px-8 py-2 2xl:text-2xl lg:text-xl text-base rounded-full absolute top-[3rem] z-[1] text-center">ABOUT ME</p>
                     </div>
                 </div>
             </div>
-            <div className="flex gap-20 my-32 mx-28 items-center justify-center w-full">
-                <div className="flex items-center" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
-                    <p className="bg-[#A8C090] p-10 rounded-2xl text-white text-lg">I graduated in 2023 with a degree in software engineering and have completed two internships focused on full-stack development. Passionate about coding and continuously learning new technologies, I am eager to start my professional career and contribute to impactful projects.</p>
-                    <div id="message-pointer" className="bg-[#A8C090] w-[20rem] h-[4rem]"></div>
+            <div className="flex lg:flex-row flex-col xl:gap-20 lg:gap-10 gap-2 mt-32 xl:mb-32 sm:mb-16 mb-12 w-5/6 mx-auto items-center justify-center overflow-x-hidden">
+                <div className="flex lg:flex-row flex-col items-center" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                    <p className="bg-[#A8C090] sm:p-10 p-6 rounded-2xl text-white 2xl:text-xl lg:text-lg text-sm">I graduated in 2023 with a degree in software engineering and have completed two internships focused on full-stack development. Passionate about coding and continuously learning new technologies, I am eager to start my professional career and contribute to impactful projects.</p>
+                    <div id="message-pointer" className="lg:block hidden bg-[#A8C090] w-[20rem] h-[4rem]"></div>
                 </div>
-                <div className="w-full" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
-                    <img className="w-[45%] rounded-full" src="avatar.png" alt="avatar" />
+                {/* <div className="xl:w-[40%] w-1/2" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true"> */}
+                <div className='xl:w-[40%] w-[70%] lg:block hidden'>
+                    <img className="rounded-full" src="avatar.png" alt="avatar" />
                 </div>
             </div>
-            <div id="experience" className="h-screen relative bg-[url(experience-bg.png)]">
+            <div id="experience" className="2xl:h-[85vh] h-screen flex flex-col lg:gap-10 gap-5 relative bg-[url(experience-bg.png)]">
                 <div className="flex items-center justify-center">
-                    <p className="bg-[#006837] mt-8 px-4 py-2 rounded-full text-white text-xl">EXPERIENCE</p>
+                    <p className="bg-[#006837] 2xl:mt-20 mt-12 px-4 py-2 2xl:text-2xl lg:text-xl text-base  rounded-full text-white">EXPERIENCE</p>
                 </div>
                 <div className="flex flex-col justify-around">
-                    <div className="mx-auto w-[80%] text-lg my-5">
+                    <div className="mx-auto w-[80%] lg:mt-5">
                         <div className="carousel-content text-lime-950">
                             {exp[currentIndex].content}
                         </div>
                     </div>
-                    <div id="carousel" className="flex items-end justify-center text-lg py-5 absolute bottom-0 w-full">
+                    <div id="carousel" className="flex items-end justify-center lg:text-lg lg:py-5 py-3 absolute bottom-0 w-full">
                         <div className="flex items-center justify-evenly w-full">
-                            <div onClick={prevSlide} className="bg-white w-[5rem] h-[5rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60">
+                            <div onClick={prevSlide} className="bg-white lg:w-[5rem] w-[4rem] lg:h-[5rem] h-[4rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60">
                                 <i className="fa-solid fa-arrow-left"></i>
                             </div>
-                            <div className="bg-white w-[7.5rem] h-[7.5rem] flex items-center justify-center rounded-full text-center shadow-xl">
+                            <div className="bg-white lg:w-[7.5rem] w-[6rem] lg:h-[7.5rem] h-[6rem] flex items-center justify-center rounded-full text-center shadow-xl">
                                 {/* <p>{exp[currentIndex].logo}</p> */}
                                 <img className='w-[80%]' src={exp[currentIndex].logo} alt="" />
                             </div>
-                            <div onClick={nextSlide} className="bg-white w-[5rem] h-[5rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60">
+                            <div onClick={nextSlide} className="bg-white lg:w-[5rem] w-[4rem] lg:h-[5rem] h-[4rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60">
                                 <i className="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>

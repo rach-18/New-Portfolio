@@ -19,26 +19,26 @@ function Skills() {
                 <img className="cloud absolute left-[-25%] top-[5%]" src="cloud3.png" alt="cloud3" />
                 <img className="cloud absolute w-[20%] left-[-25%] top-[15%]" src="cloud4.png" alt="cloud4" />
                 <img className="cloud absolute left-[-25%] top-[6%]" src="cloud2.png" alt="cloud5" />
-                <div className="flex justify-evenly items-end h-full relative z-10 bottom-[20%]">
+                <div className="flex flex-wrap justify-evenly items-end h-full relative z-10 lg:py-20 sm:py-14 py-5 px-5">
                     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200">
-                        <img className="w-[55%]" src="HTML-skill.png" alt="" />
-                        <p className="font-semibold text-[#006837]">HMTL</p>
+                        <img className="2xl:w-[65%] lg:w-[55%] w-[35%]" src="HTML-skill.png" alt="" />
+                        <p className="font-semibold lg:text-base text-xs text-[#006837]">HMTL</p>
                     </div>
                     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="500">
-                        <img className="w-[55%]" src="CSS-skill.png" alt="" />
-                        <p className="font-semibold text-[#006837]">CSS</p>
+                        <img className="2xl:w-[65%] lg:w-[55%] w-[35%]" src="CSS-skill.png" alt="" />
+                        <p className="font-semibold lg:text-base text-xs text-[#006837]">CSS</p>
                     </div>
                     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="1000">
-                        <img className="w-[55%]" src="Javascript-skill.png" alt="" />
-                        <p className="font-semibold text-[#006837]">JAVASCRIPT</p>
+                        <img className="2xl:w-[65%] lg:w-[55%] w-[35%]" src="Javascript-skill.png" alt="" />
+                        <p className="font-semibold lg:text-base text-xs text-[#006837]">JAVASCRIPT</p>
                     </div>
                     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="1500">
-                        <img className="w-[55%]" src="Java-skill.png" alt="" />
-                        <p className="font-semibold text-[#006837]">JAVA</p>
+                        <img className="2xl:w-[65%] lg:w-[55%] w-[35%]" src="Java-skill.png" alt="" />
+                        <p className="font-semibold lg:text-base text-xs text-[#006837]">JAVA</p>
                     </div>
                     <div className="flex flex-col items-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" data-aos-delay="2000">
-                        <img className="w-[55%]" src="React-skill.png" alt="" />
-                        <p className="font-semibold text-[#006837]">REACT</p>
+                        <img className="2xl:w-[65%] lg:w-[55%] w-[35%]" src="React-skill.png" alt="" />
+                        <p className="font-semibold lg:text-base text-xs text-[#006837]">REACT</p>
                     </div>
                 </div>
             </div>
