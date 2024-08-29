@@ -211,10 +211,25 @@ header, #contact-me {
   }
 }
 
+@media screen and (max-width:375px) {
+  .profile-pic {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width:320px) {
   #hero-content {
     width: 60%;
     left: 20%;
     top: -2%;
   }
+
+  .profile-pic {
+    width: 32%;
+  }
+
+  #submit-btn {
+    width: 30%;
+  }
 }
+
