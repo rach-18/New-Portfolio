@@ -177,7 +177,7 @@ header, #contact-me {
   transition: all 300ms;
 }
 
-.carousel-content .slide {
+/* .carousel-content .slide {
   display: none;
 }
 
@@ -187,7 +187,7 @@ header, #contact-me {
 
 .carousel-content .slide.active {
   display: block;
-}
+} */
 
 .github-repo:hover {
   transition: all 300ms;
@@ -196,6 +196,24 @@ header, #contact-me {
 .profile-pic {
   animation: floatUpAndDown 3s ease-in-out infinite;
 }
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar::-webkit-scrollbar {
+  height: 6px;
+  background-color: #ccf0dc;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0F6938;
+  border-radius: 5px;
+}
+
+/* For IE, Edge and Firefox */
+/* .scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
 
 @keyframes floatUpAndDown {
   0% {
@@ -211,9 +229,39 @@ header, #contact-me {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cloud-1 {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cloud-2 {
+    width: 20%;
+  }
+
+  .cloud-3 {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cloud-1 {
+    width: 30%;
+  }
+
+  .cloud-2 {
+    width: 25%;
+  }
+}
+
 @media screen and (max-width:375px) {
   .profile-pic {
     width: 30%;
+  }
+
+  .flower-div {
+    width: 20%;
   }
 }
 
@@ -230,6 +278,14 @@ header, #contact-me {
 
   #submit-btn {
     width: 30%;
+  }
+
+  .cloud-5 {
+    width: 25%;
+  }
+
+  .navbar-icons {
+    font-size: 0.8rem;
   }
 }
 

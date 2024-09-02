@@ -18,7 +18,7 @@ function Projects() {
                         <div className="lg:w-[40%] md:w-full sm:w-1/2 w-full">
                             <img className="" src="Umatter-project.png" alt="Loreal Logo" />
                         </div>
-                        <div className="flex flex-col gap-5 w-full lg:text-base sm:text-sm text-xs">
+                        <div className="flex flex-col gap-5 w-full 2xl:text-xl xl:text-base text-xs">
                             <p className="text-[#006837]">UMatter is a meditation website designed to help users find peace and mindfulness. Featuring guided meditations and relaxation techniques, this project demonstrates skills in web development and a commitment to promoting mental well-being.</p>
                             <div className="flex lg:flex-row flex-col lg:justify-start justify-between lg:items-center items-start gap-2">
                                 <a href="https://github.com/rach-18/MCT-U-Matter/tree/main" target='_blank' className="bg-white p-2 rounded-lg font-semibold text-[#006837] hover:shadow-lg github-repo"><i className="fa-brands fa-github"></i> Github</a>
@@ -30,7 +30,7 @@ function Projects() {
                         <div className="lg:w-[40%] md:w-full sm:w-1/2 w-full">
                             <img className="" src="Crypto-project.png" alt="Loreal Logo" />
                         </div>
-                        <div className="flex flex-col gap-5 w-full lg:text-base sm:text-sm text-xs">
+                        <div className="flex flex-col gap-5 w-full 2xl:text-xl xl:text-base text-xs">
                             <p className="text-[#006837]">Crypto View offers the latest real-time updates and insights on the current state of the cryptocurrency market, ensuring you stay informed about the latest trends and data in digital currencies. Easily access detailed information to make well-informed decisions in the fast-paced world of crypto.</p>
                             <div className="flex lg:flex-row flex-col lg:justify-start justify-between lg:items-center items-start gap-2">
                                 <a href="https://github.com/rach-18/Crypto-Search-App" target='_blank' className="bg-white p-2 rounded-lg font-semibold text-[#006837] hover:shadow-lg github-repo"><i className="fa-brands fa-github"></i> Github</a>
@@ -42,7 +42,7 @@ function Projects() {
                         <div className="lg:w-[40%] md:w-full sm:w-1/2 w-full">
                             <img className="" src="Loreal-project.png" alt="Loreal Logo" />
                         </div>
-                        <div className="flex flex-col gap-5 w-full lg:text-base sm:text-sm text-xs">
+                        <div className="flex flex-col gap-5 w-full 2xl:text-xl xl:text-base text-xs">
                             <p className="text-[#006837]">Created a detailed front-end clone of the official L'Oréal website, replicating its design and user experience. This project highlights advanced web development skills and attention to detail in recreating a visually appealing and user-friendly interface.</p>
                             <div className="flex lg:flex-row flex-col lg:justify-start justify-between lg:items-center items-start gap-2">
                                 <a href="https://github.com/rach-18/Loreal" target='_blank' className="bg-white p-2 rounded-lg font-semibold text-[#006837] hover:shadow-lg github-repo"><i className="fa-brands fa-github"></i> Github</a>

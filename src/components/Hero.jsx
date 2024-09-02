@@ -9,7 +9,7 @@ function Hero() {
                     <div className="flex my-auto">
                         <div className="w-[59%] bg-[#A8C090] rounded-r-full flex gap-7 items-center py-7 pl-20" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                             <div>
-                                <p className="text-white xl:text-base text-sm">Hey there! Software engineer here with a knack for developing innovative solutions to complex problems. Skilled in full-stack development and always excited to tackle new challenges. Ready to bring creative solutions to your projects!</p>
+                                <p className="text-white 2xl:text-xl xl:text-base text-sm">Hey there! Software engineer here with a knack for developing innovative solutions to complex problems. Skilled in full-stack development and always excited to tackle new challenges. Ready to bring creative solutions to your projects!</p>
                             </div>
                             <div>
                                 <img src="avatar.png" className="avatar w-[60%] rounded-full " alt="avatar" />
