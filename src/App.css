@@ -209,6 +209,17 @@ header, #contact-me {
   border-radius: 5px;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f1cfe9;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ee93bd;
+  border-radius: 5px;
+}
+
 /* For IE, Edge and Firefox */
 /* .scrollbar-hide {
   -ms-overflow-style: none; 
@@ -253,6 +264,10 @@ header, #contact-me {
   .cloud-2 {
     width: 25%;
   }
+
+  #experience {
+    padding-bottom: 12rem;
+  }
 }
 
 @media screen and (max-width:375px) {
@@ -286,6 +301,10 @@ header, #contact-me {
 
   .navbar-icons {
     font-size: 0.8rem;
+  }
+
+  #skills {
+    height: 60vh;
   }
 }
 

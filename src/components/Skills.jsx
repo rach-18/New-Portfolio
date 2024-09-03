@@ -21,49 +21,6 @@ function Skills() {
         { src: "React-skill.png", label: "REACT" },
         { src: "React-skill.png", label: "REACT" },
     ];
-    // const totalSlides = slides.length;
-
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setIsMobileView(window.innerWidth <= 768);
-    //     };
-
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener("resize", handleResize);
-    // }, []);
-
-    // const updateActiveDot = (index) => {
-    //     setCenterSlideIndex(index);
-    // };
-
-    // const handlePrevClick = () => {
-    //     if (containerRef.current) {
-    //         containerRef.current.scrollBy({ left: -containerRef.current.offsetWidth, behavior: 'smooth' });
-    //         const newIndex = centerSlideIndex > 0 ? centerSlideIndex - 1 : 0;
-    //         updateActiveDot(newIndex);
-    //     }
-    // };
-
-    // const handleNextClick = () => {
-    //     if (containerRef.current) {
-    //         containerRef.current.scrollBy({ left: containerRef.current.offsetWidth, behavior: 'smooth' });
-    //         const newIndex = centerSlideIndex < totalSlides - 1 ? centerSlideIndex + 1 : totalSlides - 1;
-    //         updateActiveDot(newIndex);
-    //     }
-    // };
-
-    // const handleTouchStart = (event) => {
-    //     containerRef.current.startX = event.touches[0].clientX;
-    // };
-
-    // const handleTouchEnd = (event) => {
-    //     const deltaX = containerRef.current.startX - event.changedTouches[0].clientX;
-    //     if (deltaX > 50) {
-    //         handleNextClick();
-    //     } else if (deltaX < -50) {
-    //         handlePrevClick();
-    //     }
-    // };
 
     return (
         <div className="overflow-x-hidden">
@@ -79,7 +36,7 @@ function Skills() {
                 </div>
             </div>
             <div className="relative">
-                <div id="skills" className="bg-[#C8DDCC] h-screen relative z-[-5] overflow-x-hidden">
+                <div id="skills" className="bg-[#C8DDCC] sm:h-screen h-[72vh] relative z-[-5] overflow-x-hidden">
                     <img className="absolute bottom-0 w-full h-[45%] object-cover" src="grass.png" alt="grass" />
                     <img className="cloud cloud-1 absolute left-[-25%] top-[5%]" src="cloud1.png" alt="cloud1" />
                     <img className="cloud cloud-2 absolute left-[-25%] top-[20%]" src="cloud2.png" alt="cloud2" />
@@ -90,7 +47,7 @@ function Skills() {
                 <div className="absolute z-10 bottom-16 w-full lg:px-20 sm:px-14 px-10 flex items-center justify-center">
                     {/* <button className="prev-btn pr-10" onClick={handlePrevClick}>Prev</button> */}
                     <div 
-                        className="carousel scrollbar flex lg:gap-28 sm:gap-20 gap-12 pb-5 items-end w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth"
+                        className="carousel scrollbar flex lg:gap-28 sm:gap-20 gap-[3rem] pb-5 items-end w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth"
                     >
                         {slides.map((slide, index) => (
                             <div key={index} className="flower-div relative xl:w-[7%] md:w-[9%] sm:w-[12%] w-[14%] shrink-0 rounded-xl ">

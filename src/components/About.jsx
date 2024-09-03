@@ -87,7 +87,7 @@ function About() {
                     <img className="rounded-full" src="avatar.png" alt="avatar" />
                 </div>
             </div>
-            <div id="experience" className="2xl:h-[85vh] h-screen flex flex-col lg:gap-10 sm:gap-5 gap-2 relative bg-[url(experience-bg.png)]">
+            <div id="experience" className="lg:pb-[20rem] pb-[15rem] flex flex-col lg:gap-10 sm:gap-5 gap-2 relative bg-[url(experience-bg.png)]">
                 <div className="flex items-center justify-center">
                     <p className="bg-[#006837] 2xl:mt-20 sm:mt-12 mt-10 px-4 py-2 2xl:text-2xl lg:text-xl text-base  rounded-full text-white">EXPERIENCE</p>
                 </div>
