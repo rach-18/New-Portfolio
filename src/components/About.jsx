@@ -84,12 +84,12 @@ function About() {
                 </div>
                 {/* <div className="xl:w-[40%] w-1/2" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true"> */}
                 <div className='xl:w-[40%] w-[70%] lg:block hidden'>
-                    <img className="rounded-full" src="avatar.png" alt="avatar" />
+                    <img className="rounded-full avatar" src="avatar.png" alt="avatar" />
                 </div>
             </div>
             <div id="experience" className="lg:pb-[20rem] pb-[15rem] flex flex-col lg:gap-10 sm:gap-5 gap-2 relative bg-[url(experience-bg.png)]">
                 <div className="flex items-center justify-center">
-                    <p className="bg-[#006837] 2xl:mt-20 sm:mt-12 mt-10 px-4 py-2 2xl:text-2xl lg:text-xl text-base  rounded-full text-white">EXPERIENCE</p>
+                    <p className="bg-[#006837] 2xl:mt-20 sm:mt-12 mt-10 px-4 py-2 2xl:text-2xl lg:text-xl text-base rounded-full text-white experience-box">EXPERIENCE</p>
                 </div>
                 <div className="flex flex-col justify-around">
                     <div className="mx-auto sm:w-[80%] w-11/12 lg:mt-5">
@@ -99,14 +99,14 @@ function About() {
                     </div>
                     <div id="carousel" className="flex items-end justify-center lg:text-lg sm:text-base text-sm lg:py-5 py-3 absolute bottom-0 w-full">
                         <div className="flex items-center justify-evenly w-full">
-                            <div onClick={prevSlide} className="bg-white lg:w-[5rem] sm:w-[4rem] w-[3rem] lg:h-[5rem] sm:h-[4rem] h-[3rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60">
+                            <div onClick={prevSlide} className="bg-white lg:w-[5rem] sm:w-[4rem] w-[3rem] lg:h-[5rem] sm:h-[4rem] h-[3rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60 cursor-none">
                                 <i className="fa-solid fa-arrow-left"></i>
                             </div>
                             <div className="bg-white lg:w-[7.5rem] sm:w-[6rem] w-[5rem] lg:h-[7.5rem] sm:h-[6rem] h-[5rem] flex items-center justify-center rounded-full text-center shadow-xl">
                                 {/* <p>{exp[currentIndex].logo}</p> */}
                                 <img className='w-[80%]' src={exp[currentIndex].logo} alt="" />
                             </div>
-                            <div onClick={nextSlide} className="bg-white lg:w-[5rem] sm:w-[4rem] w-[3rem] lg:h-[5rem] sm:h-[4rem] h-[3rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60">
+                            <div onClick={nextSlide} className="bg-white lg:w-[5rem] sm:w-[4rem] w-[3rem] lg:h-[5rem] sm:h-[4rem] h-[3rem] flex items-center justify-center rounded-full shadow-xl cursor-pointer hover:opacity-60 cursor-none">
                                 <i className="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>

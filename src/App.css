@@ -4,12 +4,43 @@
   box-sizing: border-box;
 }
 
+body {
+  cursor: none;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(190, 81, 117);
+}
+
+.cursor-outline {
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgb(190, 81, 117);
+  background-color: rgba(190, 81, 117, 0.2);
+}
+
+.cursor-dot, .cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 header, #contact-me {
   /* background-image: url(hero-background.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.project-img {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-div {
@@ -20,7 +51,7 @@ header, #contact-me {
   font-family: "Whisper", cursive;
 }
 
-.avatar {
+.avatar, .experience-boxx {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 

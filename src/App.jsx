@@ -6,7 +6,6 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import About from './components/About'
 import Contact from './components/Contact'
-// import Navbar from './components/Navbar';
 import './App.css'
 
 function App() {
@@ -16,16 +15,45 @@ function App() {
     });
   }, []);
 
-  return(
+  useEffect(() => {
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
+
+    const handleMouseMove = (event) => {
+      const { clientX, clientY } = event;
+
+      if (cursorDot && cursorOutline) {
+        cursorDot.style.left = `${clientX}px`;
+        cursorDot.style.top = `${clientY}px`;
+
+        cursorOutline.style.left = `${clientX}px`;
+        cursorOutline.style.top = `${clientY}px`;
+
+        cursorOutline.animate({
+          left: `${clientX}px`,
+          top: `${clientY}px`
+        }, {duration: 500, fill: 'forwards'});
+      }
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  return (
     <div>
-      {/* <Navbar /> */}
+      <div className="cursor-dot"></div>
+      <div className="cursor-outline"></div>
       <Hero />
       <Projects />
       <Skills />
       <About />
       <Contact />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

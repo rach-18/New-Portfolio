@@ -70,7 +70,7 @@ function Contact() {
                     <input className="sm:p-4 p-3 rounded-lg shadow-md" type="text" name="name" placeholder="Name..." />
                     <input className="sm:p-4 p-3 rounded-lg shadow-md" type="text" name="email" placeholder="Email..." />
                     <textarea className="sm:p-4 p-3 rounded-lg shadow-md" rows="5" name="message" placeholder="Message..."></textarea>
-                    <button id="submit-btn" className="bg-[#A8C090] hover:bg-[#B7CFAF] text-white sm:text-xl font-bold sm:w-[20%] w-[25%] mx-auto py-3 rounded-lg" type="submit">SUBMIT</button>
+                    <button id="submit-btn" className="bg-[#A8C090] hover:bg-[#B7CFAF] text-white sm:text-xl font-bold sm:w-[20%] w-[25%] mx-auto py-3 rounded-lg cursor-none" type="submit">SUBMIT</button>
                 </form>
             </div>
         </div>
