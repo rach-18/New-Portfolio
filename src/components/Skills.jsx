@@ -6,20 +6,16 @@ function Skills() {
     const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
 
     const slides = [
+        { src: "React-skill.png", label: "REACT" },
+        { src: "Javascript-skill.png", label: "JAVASCRIPT" },
         { src: "HTML-skill.png", label: "HTML" },
         { src: "CSS-skill.png", label: "CSS" },
-        { src: "Javascript-skill.png", label: "JAVASCRIPT" },
         { src: "Java-skill.png", label: "JAVA" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
-        { src: "React-skill.png", label: "REACT" },
+        { src: "Redux-skill.png", label: "REDUX" },
+        { src: "Tailwind-skill.png", label: "TAILWIND" },
+        { src: "Bootstrap-skill.png", label: "BOOTSTRAP" },
+        { src: "Adobe-Illustrator-skill.png", label: "ADOBE ILLUSTRATOR" },
+        { src: "Adobe-Photoshop-skill.png", label: "ADOBE PHOTOSHOP" }
     ];
 
     return (
@@ -50,10 +46,10 @@ function Skills() {
                         className="carousel scrollbar flex lg:gap-28 sm:gap-20 gap-[3rem] pb-5 items-end w-full snap-x snap-mandatory gap-4 overflow-x-scroll scroll-smooth"
                     >
                         {slides.map((slide, index) => (
-                            <div key={index} className="flower-div relative xl:w-[7%] md:w-[9%] sm:w-[12%] w-[14%] shrink-0 rounded-xl ">
+                            <div key={index} className="flower-div relative xl:w-[7.5%] md:w-[9%] sm:w-[12%] w-[14%] shrink-0 rounded-xl ">
                                 <div className="flex flex-col items-center">
                                     <img className="" src={slide.src} alt={slide.label} />
-                                    <p className="font-semibold lg:text-base text-xs text-[#006837]">{slide.label}</p>
+                                    <p className="font-semibold lg:text-base text-xs text-[#006837] text-center">{slide.label}</p>
                                 </div>
                             </div>
                         ))}

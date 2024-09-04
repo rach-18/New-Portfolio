@@ -1,4 +1,42 @@
+import { useState } from "react";
+import Swal from "sweetalert2";
+
 function Contact() {
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "9339e58b-d737-4a6c-916a-2f3ea3a64739");
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success",
+                confirmButtonColor: "#A8C090"
+            });
+            event.target.reset();
+        } else {
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Could not send the message. Try again!",
+                cancelButtonColor: "#F27474"
+            });
+            console.log(data.message);
+        }
+    };
+
     return (
         <div id="contact-me" className="bg-[url('hero-background.jpg')]">
             <div id="contact-signboard" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
@@ -17,10 +55,10 @@ function Contact() {
                     <img className="profile-pic lg:w-[12%] md:w-[18%] sm:w-[20%] w-[26%] rounded-full shadow-lg" src="me.jpeg" alt="" />
                     <p className="bg-white sm:text-xl text-lg px-6 py-2 rounded-full">Let's Connect!</p>
                 </div>
-                <form action="" className="flex flex-col pb-10 sm:pt-10 pt-8 w-5/6 mx-auto sm:gap-5 gap-3">
-                    <input className="sm:p-4 p-3 rounded-lg shadow-md" type="text" placeholder="Name..." />
-                    <input className="sm:p-4 p-3 rounded-lg shadow-md" type="text" placeholder="Email..." />
-                    <textarea className="sm:p-4 p-3 rounded-lg shadow-md" rows="5" placeholder="Message..."></textarea>
+                <form onSubmit={onSubmit} className="flex flex-col pb-10 sm:pt-10 pt-8 w-5/6 mx-auto sm:gap-5 gap-3">
+                    <input className="sm:p-4 p-3 rounded-lg shadow-md" type="text" name="name" placeholder="Name..." />
+                    <input className="sm:p-4 p-3 rounded-lg shadow-md" type="text" name="email" placeholder="Email..." />
+                    <textarea className="sm:p-4 p-3 rounded-lg shadow-md" rows="5" name="message" placeholder="Message..."></textarea>
                     <button id="submit-btn" className="bg-[#A8C090] hover:bg-[#B7CFAF] text-white sm:text-xl font-bold sm:w-[20%] w-[25%] mx-auto py-3 rounded-lg" type="submit">SUBMIT</button>
                 </form>
             </div>
