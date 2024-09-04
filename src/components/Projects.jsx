@@ -50,7 +50,7 @@ function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex lg:flex-row flex-col lg:w-full md:w-[45%] w-full lg:mx-0 mx-auto items-center lg:gap-10 gap-5 bg-[#A8C090] lg:py-10 py-8 lg:px-12 px-6 rounded-[2.5rem] shadow-lg" data-aos="zoom-in" data-aos-duration="1500">
+                    {/* <div className="flex lg:flex-row flex-col lg:w-full md:w-[45%] w-full lg:mx-0 mx-auto items-center lg:gap-10 gap-5 bg-[#A8C090] lg:py-10 py-8 lg:px-12 px-6 rounded-[2.5rem] shadow-lg" data-aos="zoom-in" data-aos-duration="1500">
                         <div className="lg:w-[40%] md:w-full sm:w-1/2 w-full">
                             <img className="project-img rounded-[2rem]" src="Loreal-project.png" alt="Loreal Logo" />
                         </div>
@@ -61,7 +61,7 @@ function Projects() {
                                 <a className="text-white cursor-none" target='_blank' href="https://rach-18.github.io/Loreal/">Click here to visit the live project!</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
