@@ -45,8 +45,8 @@ function App() {
 
   return (
     <div>
-      <div className="cursor-dot"></div>
-      <div className="cursor-outline"></div>
+      <div className="cursor-dot lg:block hidden"></div>
+      <div className="cursor-outline lg:block hidden"></div>
       <Hero />
       <Projects />
       <Skills />
