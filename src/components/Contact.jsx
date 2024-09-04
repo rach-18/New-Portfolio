@@ -7,6 +7,15 @@ function Contact() {
     const onSubmit = async (event) => {
         event.preventDefault();
         setResult("Sending....");
+        Swal.fire({
+            title: "Loading...",
+            text: "Be patient while I receive your message!!",
+            background: "url(https://sweetalert2.github.io/images/trees.png)",
+            allowOutsideClick: false,  // Prevent closing the alert by clicking outside
+            didOpen: () => {
+                Swal.showLoading();  // Show loading spinner
+            }
+        });
         const formData = new FormData(event.target);
 
         formData.append("access_key", "9339e58b-d737-4a6c-916a-2f3ea3a64739");
@@ -23,7 +32,8 @@ function Contact() {
                 title: "Success!",
                 text: "Message sent successfully!",
                 icon: "success",
-                confirmButtonColor: "#A8C090"
+                confirmButtonColor: "#A8C090",
+                background: "url(https://sweetalert2.github.io/images/trees.png)"
             });
             event.target.reset();
         } else {
@@ -31,7 +41,8 @@ function Contact() {
                 icon: "error",
                 title: "Oops...",
                 text: "Could not send the message. Try again!",
-                cancelButtonColor: "#F27474"
+                confirmButtonColor: "#F27474",
+                background: "url(https://sweetalert2.github.io/images/trees.png)"
             });
             console.log(data.message);
         }
