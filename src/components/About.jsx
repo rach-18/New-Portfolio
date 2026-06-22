@@ -51,7 +51,7 @@ function About() {
           </p>
           <div className="flex sm:justify-between items-center sm:flex-row flex-col 2xl:text-4xl lg:text-2xl sm:text-xl text-base font-semibold">
             <p>Web Development Intern</p>
-            <p>Jan 2025 - Present</p>
+            <p>Jan 2025 - Feb 2025</p>
           </div>
           <div className="flex gap-2 items-center my-2 2xl:text-xl sm:text-sm text-xs">
             <i className="fa-solid fa-location-dot"></i>
